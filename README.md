@@ -1,7 +1,17 @@
-## Robot Package Template
+## run on diff terminal
+source ~/dev_ws/install/setup.bash                               #dev_ws is the name of the folder contain your project
 
-This is a GitHub template. You can make your own copy by clicking the green "Use this template" button.
+colcon build --symlink-install  
 
-It is recommended that you keep the repo/package name the same, but if you do change it, ensure you do a "Find all" using your IDE (or the built-in GitHub IDE by hitting the `.` key) and rename all instances of `my_bot` to whatever your project's name is.
+ros2 launch my_bot rsp.launch.py                                 #launch before open gazebo and rviz
 
-Note that each directory currently has at least one file in it to ensure that git tracks the files (and, consequently, that a fresh clone has direcctories present for CMake to find). These example files can be removed if required (and the directories can be removed if `CMakeLists.txt` is adjusted accordingly).
+launch my_bot launch_sim.launch.py world:=obstacles.world        #create your own world with objects so that you you can test run your robot in gazebo then save only                                                                   objects(do not save the robot in the env) as file world in the config folder
+
+rviz2                                                            #visual your robot to see what objects your robot scanned
+
+ros2 run teleop.twist.keyboard teleop.twist.keyboard             #controll your robot manual
+
+
+
+#Remember to check the other pkgs if you need and download them.
+
