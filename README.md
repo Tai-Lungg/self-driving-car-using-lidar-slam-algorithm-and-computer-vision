@@ -1,3 +1,27 @@
+## Download ros2 humble
+https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Install-Binary.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## run on diff terminal
 source ~/dev_ws/install/setup.bash                               #dev_ws is the name of the folder contain your project
 
