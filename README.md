@@ -7,6 +7,8 @@ sudo apt install ros-humble-xacro
 sudo apt install ros-humble-gazebo-ros-pkgs -y
 ## Install teleop key
 sudo apt install ros-humble-teleop-twist-keyboard
+## Install twist_mux
+sudo apt install ros-humble-twist-mux
 ## Create workspace
 mkdir -p ~/dev_ws/src              #Create dev_ws folder and src folder inside
 cd ~/dev_ws                        #Move to dev_ws folder
